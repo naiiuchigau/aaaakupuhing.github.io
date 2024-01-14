@@ -1,0 +1,83 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+.border {
+	color: aliceblue;
+}
+.king {
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.55),#120e0e8c), url("expediav2-448841-9e0fd3-605126.jpg");
+	background-size: cover;
+	background-position: center;
+	
+	}
+.navbar {
+	width: 85%;
+	margin: auto;
+	padding: 30px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	line-height: 35px;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	z-index: 1;
+
+
+}
+.logo {
+	font-size: 30px;
+	color: white;
+	font-weight: bold;
+	width: 340px;
+	cursor: pointer;
+}
+.navbar ul li {
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+}
+.navbar ul li a {
+	color: white;
+	text-transform: uppercase;
+}
+.navbar ul li::after {
+	content: '';
+	height: 3px;
+	width: 0;
+	background: rgb(255, 255, 255);
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	transition: 0.4s;
+}
+.navbar ul li:hover:after {
+	width: 100%;
+}
+.content {
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: white;
+	position: absolute;
+	transform: translateY(-40%);
+}
+.content h1 {
+	font-size: 50px;
+	margin-top: 80px;
+}
+.content p {
+	margin: 20px auto;
+	font-weight: 100;
+	line-height: 25px;
+    color:darkgrey;
+}
+button:hover {
+	border: none;
+}
